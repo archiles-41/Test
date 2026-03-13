@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Phishing URL Detector</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>🔐 Phishing URL Detector</h1>
+
+<button id="themeToggle">Toggle Theme</button>
+
+<nav>
+<a href="#">Home</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+
+<section class="detector">
+
+<h2>Check if a URL is Safe</h2>
+
+<input type="text" id="urlInput" placeholder="Enter website URL">
+
+<button onclick="checkURL()">Analyze URL</button>
+
+</section>
+
+
+<section class="results">
+
+<h3>⭐ Confidence Score</h3>
+<p id="score">Phishing probability: --%</p>
+
+<h3>⭐ URL Risk Meter</h3>
+<div class="meter">
+<div id="riskBar"></div>
+</div>
+
+<h3>⭐ Phishing Explanation</h3>
+
+<ul id="reasons"></ul>
+
+</section>
+
+
+<section id="contact">
+
+<h2>Contact</h2>
+
+<p>Email: mahesh@example.com</p>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
